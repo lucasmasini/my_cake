@@ -1,0 +1,108 @@
+
+/* BACKGROUNDS */
+.bodyIndex{
+	height: 100vh;
+	display: grid;
+	grid-template-areas: 
+	"navegador"
+	"principal"
+	"pie";
+	grid-template-rows: 0.3fr 3fr 0.1fr;
+	grid-template-columns: 100%;
+
+	/*fondo de pantalla*/
+
+	background-image: url("../imagenes/fondo8.jpg");
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.bodyNosotros{
+	height: 100vh;
+	display: grid;
+	grid-template-areas: 
+	"navegador"
+	"descripcion"
+	"pie";
+	grid-template-rows: 0.3fr 3fr 0.1fr;
+
+	/*fondo de pantalla*/
+
+
+	background-image: url("../imagenes/fondo7.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.bodyEquipo{
+	height: 100vh;
+	display: grid;
+	grid-template-areas: 
+	"navegador"
+	"equipo"
+	"pie";
+	grid-template-rows: 0.3fr 3fr 0.1fr;
+	grid-template-columns: 100%;
+
+	/*fondo de pantalla*/
+	background-image: url("../imagenes/fondo2.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.bodyProductos{
+	height: 100vh;
+	display: grid;
+	grid-template-areas: 
+	"navegador"
+	"productos"
+	"pie"
+	;
+	grid-template-rows: 0.3fr 3fr 0.1fr;
+
+	/*fondo de pantalla*/
+	background-image: url("../imagenes/fondo15.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.bodyUbicacion{
+	height: 100vh;
+	display: grid;
+	grid-template-areas: 
+	"navegador"
+	"informacion"
+	"pie"
+	;
+	grid-template-rows: 0.3fr 3fr 0.1fr;
+
+	/*fondo de pantalla*/
+	background-image: url("../imagenes/fondo16.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.bodyContacto {
+	height: 100vh;
+	display: grid;
+	grid-template-areas: 
+	"navegador"
+	"enlaces"
+	"input"
+	"pie"
+	;
+	grid-template-rows: 0.3fr 3fr 0.1fr;
+
+	/*fondo de pantalla*/
+	background-image: url("../imagenes/fondo11.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
