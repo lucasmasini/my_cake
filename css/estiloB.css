@@ -1,6 +1,6 @@
 /* BACKGROUNDS */
 .bodyIndex {
-  height: 100vh;
+  height: 150vh;
   display: grid;
   grid-template-areas: "navegador" "principal" "pie";
   grid-template-rows: 0.3fr 3fr 0.1fr;
@@ -7924,18 +7924,11 @@ textarea.form-control-lg {
 
 /* ANIMACIONES */
 .navbar-collapse a {
-  transition: all .3s; }
+  transition: all .4s; }
 
 .navbar-collapse a:hover {
   text-decoration: underline;
-  font-size: 1.04em; }
-
-.navbar-brand div {
-  transition: all .36s; }
-
-.navbar-brand div:hover {
-  color: #CE7D35;
-  font-size: 1.05em; }
+  font-size: 1.1em; }
 
 .mainEquipoPeople .card {
   transition: all .8s; }
