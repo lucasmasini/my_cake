@@ -8,6 +8,31 @@
 	margin-left: 50px;
 	margin-bottom: 6px;
 }
+.mainIndex{
+	display: grid;
+	grid-template-areas: 
+	"title"
+	"arrow"
+	"card"
+	;
+	grid-template-rows: 7.8fr 1.7fr 9.5fr;
+}
+.mainIndex h1 {
+	grid-area: title;
+	font-weight: 100px;
+}
+.mainIndexArrow {
+	grid-area: arrow;
+		img{
+			width: 14.375em;
+			height: 7.5em;
+		}
+}
+ 
+
+.mainNosotros {
+	grid-area: card;
+}
 .carousel-item img{
 	height: 55vh;
 }
@@ -38,6 +63,9 @@
 	width: 100%;
 	height: 100%;
 }
+
+
+
 /* ANIMACIONES */
 .navbar-collapse a {
 	transition: all .4s;
@@ -59,6 +87,8 @@
 .mainContacto .links a:hover {
 	font-size: 1.1em;
 }
+
+
 
 /* MEDIAS */
 
