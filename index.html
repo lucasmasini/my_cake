@@ -7,12 +7,20 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap" rel="stylesheet">
-	<meta charset="utf-8">
+	<link rel="icon" href="imagenes/icono.png">
 	<link href="css/estiloB.css" rel="stylesheet" type="text/css">
 	<link href="css/normalize.css" rel="stylesheet" type="text/css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<title>My cakes</title>
+	<meta name="keywords" content="cupcake, torta, dulce, pasteleria, postre, chocolate">
+	<meta name="description" content="Somos una pasteleria, que no solo hace cosas dulces y deliciosas, sino que te alegra el dia. Ofrecemos mas tortas y postres un, ofrecemos una experiencia que merece la pena vivir">
 </head>
 <body class="bodyIndex">
+	<!--INSERTANDO e INICIANDO AOS-->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 	<!--IMPORTANDO ICONOS FOOTER-->
 	<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -28,27 +36,27 @@
 	</svg>
 	<header>
 		<!--NAVBAR-->
-		<nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+		<nav class="navbar navbar-expand-lg bg-dark fixed-top navbar-light">
 			<div class="container-fluid">
 				<a class="navbar-brand text-secondary fs-4" href="index.html">
 					<div>My Cakes</div>
 					<img src="imagenes/marca1.png" class="align-text-top rounded-circle" alt="Mycake" width="33" height="30">        
 				</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav">
-						<li class="nav-item text-secondary fs-6 px-3">
+						<li class="nav-item text-light fs-6 px-3">
 							<a class="text-reset nav-link" href="paginas/equipo.html">Nuestro Equipo</a>
 						</li>
-						<li class="nav-item text-secondary fs-6 px-3">
+						<li class="nav-item text-light fs-6 px-3">
 							<a class="text-reset nav-link" href="paginas/productos.html">Productos</a>
 						</li>
-						<li class="nav-item text-secondary fs-6 px-3">
+						<li class="nav-item text-light fs-6 px-3">
 							<a class="text-reset nav-link" href="paginas/ubicacion.html">Ubicacion</a>
 						</li>
-						<li class="nav-item text-secondary fs-6 px-3">
+						<li class="nav-item text-light fs-6 px-3">
 							<a class="text-reset nav-link" href="paginas/contacto.html">Contacto</a>
 						</li>
 					</ul>
@@ -57,7 +65,7 @@
 		</nav>
  	</header>	
 	<main class="mainIndex">
-		<div class="d-flex flex-row-reverse align-items-center p-4 mb-2">
+		<div class="d-flex flex-row-reverse align-items-center ">
 			<h1 class="h1 text-secondary me-5">My Cakes</h1>
 		</div>
 		<div class="mainIndexArrow d-flex align-items-center justify-content-center">
@@ -65,41 +73,33 @@
 				<img src="imagenes/flecha.png" alt="link a nosotros">
 			</a>
 		</div>
-		<div class="mainNosotros p-5 d-flex align-items-center justify-content-center" id="nosotros">
-			<div class="row row-cols-1 row-cols-md-3 g-4">
-				<div class="col">
-				  <div class="card">
-					<img src="..." class="card-img-top" alt="...">
-					<div class="card-body">
-					  <h5 class="card-title">Card title</h5>
-					  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-					</div>
-				  </div>
+		<div class="mainNosotros p-4 d-flex align-items-center justify-content-evenly" id="nosotros">
+			<div data-aos="fade-right" class="card bg-dark">
+				<img src="/imagenes/mission.png" class="card-img-top" alt="Mision de la empresa">
+				<div class="card-body">
+					<h3 class="text-light text-center">Mision</h3>
+					<p class="card-text text-light"> Nuestra Mision es elaborar productos de la mas alta calidad para nuestros clientes, utilizando ingredientes frescos y las mejores recetas. Poder cambiarle el dia a las personas</p>
 				</div>
-				<div class="col">
-				  <div class="card">
-					<img src="..." class="card-img-top" alt="...">
-					<div class="card-body">
-					  <h5 class="card-title">Card title</h5>
-					  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam corrupti laborum nobis tempora accusamus voluptatibus temporibus dicta, nostrum enim aut esse nam blanditiis dolor! Beatae temporibus deserunt pariatur exercitationem aspernatur.</p>
-					</div>
-				  </div>
+			</div>
+			<div data-aos="fade-up" class="card bg-dark text-secondary">
+				<img src="/imagenes/vision.png" class="card-img-top" alt="Vision de la empresa">
+				<div class="card-body">
+					<h3 class="text-light text-center">Vision</h3>
+					<p class="card-text text-light">Nuestro desafio es ser reconocido en todo el pais, como la pasteleria gourmet mejor posicionada y por la exelencia de nustros productos y nuestro equipo. </p>
 				</div>
-				<div class="col">
-				  <div class="card">
-					<img src="..." class="card-img-top" alt="...">
-					<div class="card-body">
-					  <h5 class="card-title">Card title</h5>
-					  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-					</div>
-				  </div>
-				</div>
-			  </div>
+			</div>
+			<div data-aos="fade-left" class="card bg-dark text-secondary">
+				<img src="/imagenes/values.png" class="card-img-top" alt="Valores de la empresa">
+				<div class="card-body">
+					<h3 class="text-light text-center">Valores</h3>
+					<p class="card-text text-light">Dentro de nuestros valores podemos destacar, nuestra vocacion hacia el cliente, nuestra notable calidad, un equipo de trabajo sobresaliente y confianza en nuestras elaboraciones </p>
+			</div>
 		</div>
+	</div>
 	</main> 
 	<footer class="d-flex flex-wrap justify-content-between align-items-center py-4 my-0 border-top bg-dark bg-opacity-100">
 		<div class="col-md-4 d-flex align-items-center ps-4">
-			<span class="text-muted fs-6 text-secondary">&copy; Desarrolado por Lucas Masini</span>
+			<span class="text-muted fs-6 text-light">&copy; Desarrolado por Lucas Masini</span>
 		</div>
 		<ul class="nav col-md-4 justify-content-end list-unstyled d-flex pe-4">
 			<li class="ms-4"><a class="text-muted" target="_blankf" href="https://twitter.com/home"><svg class="bi" width="29" height="28"><use xlink:href="#twitter"/></svg></a></li>
