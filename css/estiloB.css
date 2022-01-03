@@ -7924,8 +7924,8 @@ textarea.form-control-lg {
   .bodyProductos .navbar-brand img {
     width: 46px;
     height: 40px; }
-  .fs-2 {
-    font-size: 0px; }
+  .bodyProductos {
+    overflow: hidden; }
   .mainProductos .container {
     margin-top: 5em; }
   .mainProductos .carousel-item img {
@@ -7939,8 +7939,6 @@ textarea.form-control-lg {
   .bodyEquipo .navbar-brand img {
     width: 46px;
     height: 40px; }
-  .fs-2 {
-    font-size: 0px; }
   .mainEquipo {
     margin-top: 6em; }
     .mainEquipo .mainEquipoCards {
@@ -7956,8 +7954,6 @@ textarea.form-control-lg {
   .bodyUbicacion .navbar-brand img {
     width: 46px;
     height: 40px; }
-  .fs-2 {
-    font-size: 0px; }
   .mainUbicacion h3, .mainUbicacion .h3 {
     font-size: 2.1em; }
   .mainUbicacion h6, .mainUbicacion .h6 {

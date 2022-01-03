@@ -93,8 +93,8 @@
 		width: 46px;
 		height: 40px;
 	}
-	.fs-2{
-		font-size: 0px;
+	.bodyProductos {
+		overflow: hidden;
 	}
 	.mainProductos {
 		.container {
@@ -117,9 +117,6 @@
 		width: 46px;
 		height: 40px;
 	}
-	.fs-2{
-		font-size: 0px;
-	}
 	.mainEquipo {
 		margin-top: 6em;
 		.mainEquipoCards{
@@ -140,9 +137,6 @@
 	.bodyUbicacion .navbar-brand img {
 		width: 46px;
 		height: 40px;
-	}
-	.fs-2{
-		font-size: 0px;
 	}
 	.mainUbicacion {
 		h3{
