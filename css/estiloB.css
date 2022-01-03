@@ -8094,8 +8094,14 @@ textarea.form-control-lg {
     .mainNosotros .card {
       box-shadow: 3px 3px 3px 3px rgba(66, 66, 66, 0.336);
       width: 1009rem; }
+  .bodyProductos {
+    overflow: hidden; }
+  .mainProductos .container {
+    margin-top: 3.5em; }
+  .mainProductos .carousel-caption {
+    margin-bottom: 1.4em; }
   .mainProductos .carousel-item img {
-    height: 58vh; }
+    height: 74vh; }
   .mainProductos h5, .mainProductos .h5 {
     font-size: 1.7em; }
   .mainProductos p {

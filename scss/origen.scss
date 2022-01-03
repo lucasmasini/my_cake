@@ -345,9 +345,18 @@
 			width: 1009rem;
 		}
 	}
+	.bodyProductos{
+		overflow: hidden;
+	}
 	.mainProductos {
+		.container{
+			margin-top: 3.5em;
+		}
+		.carousel-caption {
+			margin-bottom: 1.4em;
+		}
 		.carousel-item img{
-			height: 58vh;
+			height: 74vh;
 		}
 		h5 {
 			font-size: 1.7em;
