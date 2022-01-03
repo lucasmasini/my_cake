@@ -1,8 +1,8 @@
 
 @import "background.scss";
 @import "bp-scss/bootstrap.scss";
- 
 /* CSS BOOTSTRAP */
+
 .navbar-brand div {
 	position: absolute;
 	margin-left: 50px;
@@ -11,40 +11,13 @@
 .mainNosotros {
 	grid-area: card;
 }
-.carousel-item img{
-	height: 55vh;
+.mainContacto {
+	button {
+		width: 7.5em;
+	}
 }
-.carousel-control-prev-icon {
-	background-color: grey;
-	opacity: 75%;
-}
-.carousel-control-next-icon{
-	background-color: grey;
-	opacity: 50%;
-}
-.carousel-control-prev-icon:hover {
-	opacity: 100%;
-}
-.carousel-control-next-icon:hover {
-	opacity: 100%;
-}
-.mainNosotrosVideo{
-	margin-left: 40px;
-	display: flex;
-	justify-content: center;
-	width: 90%;
-	height: 70vh;
-	
-}
-.mainNosotrosVideo video{
-	padding: 4px;
-	width: 100%;
-	height: 100%;
-}
-
-
-
 /* ANIMACIONES */
+
 .navbar-collapse a {
 	transition: all .4s;
 }
@@ -59,15 +32,6 @@
 	transform: translate(16px,-18px);
 	box-shadow: 2px 4px 4px 2px rgba(30,30,30,1);
 }
-.mainContacto .links a {
-	transition: all .4s;
-}
-.mainContacto .links a:hover {
-	font-size: 1.1em;
-}
-
-
-
 /* MEDIAS */
 
 @media (min-width: 1745px) {
@@ -122,10 +86,90 @@
 			width: 32rem;
 		}
 	}
-	
+	.bodyProductos .navbar-brand div {
+		font-size: 0px;
+	}
+	.bodyProductos .navbar-brand img {
+		width: 46px;
+		height: 40px;
+	}
+	.fs-2{
+		font-size: 0px;
+	}
+	.mainProductos {
+		.container {
+			margin-top: 5em;
+		}
+		.carousel-item img{
+			height: 62vh;
+		}
+		h5 {
+			font-size: 2em;
+		}
+		p {
+			font-size: 1.2em;
+		}
+	}
+	.bodyEquipo .navbar-brand div {
+		font-size: 0px;
+	}
+	.bodyEquipo .navbar-brand img {
+		width: 46px;
+		height: 40px;
+	}
+	.fs-2{
+		font-size: 0px;
+	}
+	.mainEquipo {
+		margin-top: 6em;
+		.mainEquipoCards{
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.card{
+			width: 42rem;
+		}
+		img {
+			width: 19em;
+			height: 18em;
+		}
+	}
+	.bodyUbicacion .navbar-brand div {
+		font-size: 0px;
+	}
+	.bodyUbicacion .navbar-brand img {
+		width: 46px;
+		height: 40px;
+	}
+	.fs-2{
+		font-size: 0px;
+	}
+	.mainUbicacion {
+		h3{
+			font-size: 2.1em;
+		}
+		h6{
+			font-size: 1.3em;
+		}
+		iframe {
+			width: 28em;
+			height: 37em;
+		}
+	}
+	.bodyContacto .navbar-brand div {
+		font-size: 0px;
+	}
+	.bodyContacto .navbar-brand img {
+		width: 46px;
+		height: 40px;
+	}
+	.mainContacto {
+		height: 78.9vh;
+		margin-top: 8em;
+		padding: 2em;
+	}
 }
-
-@media (min-width: 769px) and (max-width: 1744px) {
+@media (min-width: 992px) and (max-width: 1744px) {
 	.bodyIndex .navbar-brand div {
 		font-size: 0px;
 	}
@@ -163,6 +207,8 @@
 			
 	}
 	.mainNosotros {
+		display: flex;
+		flex-wrap: wrap;
 		img {
 			width: 10em;
 			height: 13em;
@@ -178,8 +224,90 @@
 			width: 26.5rem;
 		}
 	}
+	
+	.bodyProductos .navbar-brand div {
+		font-size: 0px;
+	}
+	.bodyProductos .navbar-brand img {
+		width: 46px;
+		height: 40px;
+	}
+	.bodyProductos {
+		overflow: hidden;
+	}
+	.mainProductos {
+		.container{
+			margin-top: 3.6em;
+		}
+		.carousel-caption {
+			margin-bottom: 1.2em;
+		}
+		.carousel-item img{
+			
+			height: 75vh;
+		}
+		h5 {
+			font-size: 1.7em;
+		}
+		p {
+			font-size: 1em;
+		}
+	}
+	.bodyEquipo .navbar-brand div {
+		font-size: 0px;
+	}
+	.bodyEquipo .navbar-brand img {
+		width: 46px;
+		height: 40px;
+	}
+	.mainEquipo {
+		margin-top: 6em;
+		.mainEquipoCards{
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.card{
+			width: 27rem;
+		}
+		img {
+			width: 14.5em;
+			height: 13em;
+		}
+	}
+	.bodyUbicacion .navbar-brand div {
+		font-size: 0px;
+	}
+	.bodyUbicacion .navbar-brand img {
+		width: 46px;
+		height: 40px;
+	}
+	.mainUbicacion {
+		margin-top: 1.7em;
+		padding: 2.5em;
+		h3{
+			font-size: 2em;
+		}
+		h6{
+			font-size: 1.3em;
+		}
+		iframe {
+			width: 22em;
+			height: 29em;
+		}
+	}
+	.bodyContacto .navbar-brand div {
+		font-size: 0px;
+	}
+	.bodyContacto .navbar-brand img {
+		width: 46px;
+		height: 40px;
+	}
+	.mainContacto {
+		margin-top: 3em;
+		padding: 2em;
+	}
 }
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 991px) {
 	.mainIndex h1{
 		font-size: 0px;
 	}
@@ -189,7 +317,8 @@
 		"arrow"
 		"card"
 		;
-		grid-template-rows: 3fr 3fr;
+		grid-template-rows: 9fr 5.5fr;
+		grid-template-columns: 100%;
 		overflow-x: hidden;
 	}
 	.mainIndexArrow {
@@ -204,22 +333,65 @@
 			}
 			
 	}
-	.mainNosotros {
+	.mainNosotros {	
 		display: flex;
 		flex-wrap: wrap;
 		img {
-			width: 5em;
+			width: 6.7em;
 			height: 8em;
 		}
 		h3 {
-			font-size: 1.em;
+			font-size: 1em;
 		}
 		p {
-			font-size: 0.6em;
+			font-size: 0.7em;
 		}
 		.card {
 			box-shadow: 3px 3px 3px 3px rgba(66, 66, 66, 0.336);
 			width: 1009rem;
 		}
+	}
+	.mainProductos {
+		.carousel-item img{
+			height: 58vh;
+		}
+		h5 {
+			font-size: 1.7em;
+		}
+		p {
+			font-size: 1em;
+		}
+	}
+	.mainEquipo {
+		margin-top: 6em;
+		.mainEquipoCards{
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.card{
+			width: 24.5rem;
+		}
+		img {
+			width: 13.5em;
+			height: 13em;
+		}
+	}
+	.mainUbicacion {
+		margin-top: 2em;
+		padding: 2.5em;
+		h3{
+			font-size: 1.9em;
+		}
+		h6{
+			font-size: 1.1em;
+		}
+		iframe {
+			width: 18em;
+			height: 21.6em;
+		}
+	}
+	.mainContacto {
+		margin-top: 3em;
+		padding: 2em;
 	}
 }

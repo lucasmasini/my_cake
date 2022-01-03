@@ -11,84 +11,146 @@
 	<link href="../css/estiloB.css" rel="stylesheet" type="text/css">
 	<link href="../css/normalize.css" rel="stylesheet" type="text/css">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="icon" href="../imagenes/icono.png">
 	<title>Nuestro equipo</title>
+	<meta name="keywords" content="equipo, personas, pasteleros, trabajadores">
+	<meta name="description" content="Descubri quienes son los responsables de hacernos la mejor pasteleria de Argentina. Nuestros pasteleros y equipo que dejan todo dia a dia.">
 </head>
 <body class="bodyEquipo">
-	<!--MOBILE FIRST-->
+	<!--INSERTANDO e INICIANDO AOS-->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<!--IMPORTANDO ICONOS FOOTER-->
+	<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+		<symbol id="facebook" fill="currentColor" viewBox="0 0 16 16">
+		  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+		</symbol>
+		<symbol id="instagram" fill="currentColor" viewBox="0 0 16 16">
+			<path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+		</symbol>
+		<symbol id="twitter" fill="currentColor" viewBox="0 0 16 16">
+		  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+		</symbol>
+	</svg>
 	<header>
-		<div class="container-fluid">
-			<div class="row justify-content-start">
-				<nav class="col navbar navbar-light bg-dark text-secondary">
-			  		<div class="container-fluid">	
-					<a class="navbar-brand text-secondary fs-5" href="../index.html">
-						<div>My Cakes</div>
-						<img src="../imagenes/marca1.png" class="align-text-top rounded-circle" alt="Mycake" width="33" height="30">        
-					</a>
-				    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-				      <span class="navbar-toggler-icon"></span>
-				    </button>
-				    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-						<div class="navbar-nav">
-							<a class="text-reset nav-link" href="nosotros.html">¿Quienes Somos?</a>
+		<!--NAVBAR-->
+		<nav class="navbar navbar-expand-lg bg-dark fixed-top navbar-light">
+			<div class="container-fluid">
+				<a class="navbar-brand text-secondary fs-4" href="../index.html">
+					<div>My Cakes</div>
+					<img src="../imagenes/marca1.png" class="align-text-top rounded-circle" alt="Mycake" width="33" height="30">        
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item text-light fs-6 px-4">
 							<a class="text-reset nav-link" href="equipo.html">Nuestro Equipo</a>
+						</li>
+						<li class="nav-item text-light fs-6 px-4">
 							<a class="text-reset nav-link" href="productos.html">Productos</a>
+						</li>
+						<li class="nav-item text-light fs-6 px-4">
 							<a class="text-reset nav-link" href="ubicacion.html">Ubicacion</a>
-							<a class="text-reset nav-link" href="contacto.html">Contacto</a>	        
-						  </div>
-				    </div>
-				  </div>
-				</nav>
+						</li>
+						<li class="nav-item text-light fs-6 px-4">
+							<a class="text-reset nav-link" href="contacto.html">Contacto</a>
+						</li>
+					</ul>
+				</div>
 			</div>
-		</div>
-	</header>
+		</nav>
+ 	</header>
 	<main class="mainEquipo">
 		<h2 class="h2 display-2 mt-3 p-2 text-center">Nuestro Equipo</h2>
-		<div class="container mt-4 p-3 d-grid gap-4 justify-content-center mainEquipoPeople">
-			<div class="row">
-				<div class="col-xxl">
-					<div class="card bg-dark text-secondary" style="width: 22rem;">
-					<img src="../imagenes/persona.png" class="card-img-top" alt="Persona 1">
-					<div class="card-body text-center">
-					<p class="card-text">Descripcion de la persona y su rol en la empresa </p>
+		<div class="mainEquipoCards mt-4 p-5 d-flex gap-5 justify-content-evenly">
+			<div data-aos="flip-left" data-aos-duration="1000">
+				<div class="card bg-dark text-secondary">
+					<img src="../imagenes/Pastelero1.jpg" class="card-img-top" alt="Julian">
+					<div class="card-body text-light">
+						<h4>Julian</h4>
+						<p class="card-text">Pastelero experto en tortas y decoracion de las mismas</p>
 					</div>
 				</div>
 			</div>
-			</div>
-			<div class="row">
-				<div class="col-xxl">
-					<div class="card bg-dark text-secondary" style="width: 22rem;">
-						<img src="../imagenes/persona.png" class="card-img-top" alt="Persona 2">
-						<div class="card-body text-center">
-						<p class="card-text">Descripcion de la persona y su rol en la empresa </p>
-						</div>
+			<div data-aos="flip-right" data-aos-duration="1000">
+				<div class="card bg-dark text-secondary">
+					<img src="../imagenes/Pastelero2.jpg" class="card-img-top" alt="Esteban">
+					<div class="card-body text-light">
+						<h4>Esteban</h4>
+						<p class="card-text">Especialista en elaborar recetas nuevas e investigacion</p>
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-xxl">
-					<div class="card bg-dark text-secondary" style="width: 22rem;">
-						<img src="../imagenes/persona.png" class="card-img-top" alt="Persona 3">
-						<div class="card-body text-center">
-						<p class="card-text">Descripcion de la persona y su rol en la empresa </p>
-						</div>
+			<div data-aos="flip-left" data-aos-duration="1000">
+				<div class="card bg-dark text-secondary">
+					<img src="../imagenes/Pastelera1.jpg" class="card-img-top" alt="Sofia">
+					<div class="card-body text-light">
+						<h4>Sofia</h4>
+						<p class="card-text">Experimentada pastelera en la elaboracion de los cupcakes</p>
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-xxl">
-					<div class="card bg-dark text-secondary" style="width: 22rem;">
-					<img src="../imagenes/persona.png" class="card-img-top" alt="Persona 4">
-					<div class="card-body text-center">
-					<p class="card-text">Descripcion de la persona y su rol en la empresa </p>
+			<div data-aos="flip-right" data-aos-duration="1000">
+				<div class="card bg-dark text-secondary">
+					<img src="../imagenes/Pastelera2.jpg" class="card-img-top" alt="Noelia">
+					<div class="card-body text-light">
+						<h4>Noelia</h4>
+						<p class="card-text">Jefa de cocina. Nuestra chef pastelera mas experimentada</p>
 					</div>
 				</div>
 			</div>
-			</div>	
+			<div data-aos="flip-left" data-aos-duration="1000">
+				<div class="card bg-dark text-secondary">
+					<img src="../imagenes/rrhh.jpg" class="card-img-top" alt="Mariano">
+					<div class="card-body text-light">
+						<h4>Mariano</h4>
+						<p class="card-text">Nuestro equipo RRHH, encargado de nuestro equipo de trabajo</p>
+					</div>
+				</div>
+			</div>
+			<div data-aos="flip-right" data-aos-duration="1000">
+				<div class="card bg-dark text-secondary">
+					<img src="../imagenes/CTO.jpg" class="card-img-top" alt="Natalia">
+					<div class="card-body text-light">
+						<h4>Natalia</h4>
+						<p class="card-text">Nuestra CTO y manager de nuestra imagen en todas las redes sociales</p>
+					</div>
+				</div>
+			</div>
+			<div data-aos="flip-left" data-aos-duration="1000">
+				<div class="card bg-dark text-secondary">
+					<img src="../imagenes/CEO.jpg" class="card-img-top" alt="Tobias">
+					<div class="card-body text-light">
+						<h4>Tobias</h4>
+						<p class="card-text">Nuestro CEO, quien maneja todo el negocio y la expansion del mismo</p>
+					</div>
+				</div>
+			</div>
+			<div data-aos="flip-right" data-aos-duration="1000">
+				<div class="card bg-dark text-secondary">
+					<img src="../imagenes/Dueños.jpg" class="card-img-top" alt="Jorge y Julia">
+					<div class="card-body text-light">
+						<h4>Jorge y Julia</h4>
+						<p class="card-text">Dueños de My cake y quienes dedican todo su amor a la pasteleria</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</main>
-	<footer class="footerEquipo">
-		<div class="text-black">&copy 2021 desarrollado por Lucas Masini</div>
+	<footer class="d-flex flex-wrap justify-content-between align-items-center py-4 my-0 border-top bg-dark bg-opacity-100">
+		<div class="col-md-4 d-flex align-items-center ps-4">
+			<span class="text-muted fs-6 text-light">&copy; Desarrolado por Lucas Masini</span>
+		</div>
+		<ul class="nav col-md-4 justify-content-end list-unstyled d-flex pe-4">
+			<li class="ms-4"><a class="text-muted" target="_blankf" href="https://twitter.com/home"><svg class="bi" width="29" height="28"><use xlink:href="#twitter"/></svg></a></li>
+			<li class="ms-4"><a class="text-muted" target="_blankf" href="https://www.instagram.com"><svg class="bi" width="29" height="28"><use xlink:href="#instagram"/></svg></a></li>
+			<li class="ms-4"><a class="text-muted" target="_blankf" href="https://www.facebook.com"><svg class="bi" width="29" height="28"><use xlink:href="#facebook"/></svg></a></li>
+		</ul>
 	</footer>
 </body>
 </html>
